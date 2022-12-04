@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: blue;
+    min-width: 100vw;
+    max-width: 100vh;
+}
+.main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.container{
+    display: grid;
+    background-color: skyblue;
+    width: 1200px;
+    height: 700px;
+    gap: 10px;
+    grid-template-columns: 270px 270px 270px 270px;
+    grid-template-areas: "title title title title" 
+                        "fb-card  t-card i-card y-card"
+                        "fb-card  t-card i-card y-card"
+                        "overview overview overview overview"
+                        "fb-view fb-like inst-like inst-view"
+                        "twt-view  twt-like utube-like utube-view";
+
+}
+.box{
+    background-color: snow;
+}
+
+.dashboard-top{
+    grid-area: title;
+}
+.facebook-card{
+    grid-area: fb-card;
+    position: relative;
+   border-top:solid 5px hsl(208, 92%, 53%);
+}
+.twitter-card{
+    grid-area: t-card; 
+    border-top:solid 5px hsl(208, 92%, 53%);
+
+}
+.instagram-card{
+    grid-area: i-card;
+    border-top:solid 5px linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+
+
+
+}
+.youtube-card{
+    grid-area: y-card;
+    border-top:solid 5px  hsl(348, 97%, 39%);
+
+}
+.Overview{
+    grid-area: overview;
+
+}
+.facebook-view-card{
+    grid-area: fb-view;
+
+
+}
+.facebook-like-card{
+    grid-area: fb-like;
+}
+.instagram-like-card{
+    grid-area: inst-like;
+}
+.instagram-view-card{
+    grid-area: inst-view;
+}
+.twitter-view-card{
+    grid-area: twt-view;
+
+
+}
+.twitter-like-card{
+    grid-area: twt-like;
+
+}
+.youtube-like-card{
+    grid-area: utube-like;
+}
+.youtub-view-card{
+    grid-area: utube-view;
+}
+.span{
+    position: absolute;
+}
